@@ -4,18 +4,31 @@ title: "Comissão de Aprovados AFT CNU 2024"
 description: "Site da Comissão de Aprovados no Cadastro de Reserva do concurso para Auditor-Fiscal do Trabalho do CNU (Concurso Nacional Unificado) de 2024."
 permalink: /
 ---
-<section class="latest-news">
+<section class="ultimas-noticias">
     <div class="container">
-        <div class="start">
-            <br>
-            <h1>Comissão de Aprovados para o cargo de Auditor-Fiscal do Trabalho do CNU 2024</h1>
-            <a href="https://www.instagram.com/aprovadosaft2024/" target="_blank">
-                <picture>
-                    <source media="(max-width: 768px)" srcset="/imagens/banner-instagram-mobile.png">
-                    <img src="/imagens/banner-instagram.png" loading="lazy" alt="Comissão Cadastro de Reserva do CNU (Concurso Nacional Unificado)">
-                </picture>
-            </a>
+        {% assign noticias = site.posts | limit: 4 %}
+        {% if noticias.size > 0 %}
+        {% assign principal = noticias[0] %}
+        <article class="noticia-principal">
+            <span class="noticia-data"> {{ principal.date | date: "%d/%m/%Y" }}</span>
+            <h3><a href="{{ principal.url | relative_url }}">{{ principal.title }}</a></h3>
+            {% if principal.description %}
+            <p>{{ principal.description }}</p>
+            {% endif %}
+            <a class="leia-mais" href="{{ principal.url | relative_url }}">Leia mais →</a>
+        </article>
+        <div class="noticias-grid">
+            {% for post in noticias offset:1 %}
+            <article class="noticia-card">
+                <span class="noticia-data">{{ post.date | date: "%d/%m/%Y" }}</span>
+                <h3><a href="{{ post.url | relative_url }}"> {{ post.title }}</a></h3>
+                {% if post.description %}
+                <p>{{ post.description }}</p>
+                {% endif %}
+                <a class="leia-mais" href="{{ post.url | relative_url }}">Leia mais →</a>
+            </article> {% endfor %}
         </div>
+        {% endif %}
     </div>
 </section>
 
