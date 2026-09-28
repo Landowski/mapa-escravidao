@@ -341,6 +341,10 @@ h2 {
     padding: 40px 0;
 }
 
+.more-section h1, .lista-noticias h1 {
+	margin-bottom: 20px;
+}
+
 .more-section p {
     margin-bottom: 20px;
 }
