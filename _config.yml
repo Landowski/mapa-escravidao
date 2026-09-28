@@ -1,6 +1,0 @@
-theme: null
-title: "Mapa da Escravidão"
-description: "Carta compromisso para tirar o Brasil do mapa da escravidão contemporânea."
-url: "https://mapadaescravidao.com.br"
-plugins:
-  - jekyll-sitemap
