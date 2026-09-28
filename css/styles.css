@@ -341,7 +341,7 @@ h2 {
     padding: 40px 0;
 }
 
-.more-section h1, .lista-noticias h1 {
+.more-section h1, .noticias h1 {
 	margin-bottom: 20px;
 }
 
@@ -388,8 +388,9 @@ h2 {
 }
 
 .item-noticia h3 {
+	font-family: var(--fonte-titulo);
     margin: 0 0 8px;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     line-height: 1.25;
 }
 
@@ -444,10 +445,10 @@ h2 {
         padding: 22px 0;
     }
     .item-noticia h3 {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
     .item-noticia p {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
 }
