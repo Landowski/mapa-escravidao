@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: modelo
 title: "Operação resgata trabalhadores em situação análoga à escravidão no Pará"
 date: 2026-09-26
 description: "Fiscalização identificou trabalhadores submetidos a condições degradantes em uma propriedade rural."

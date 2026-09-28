@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: modelo
 title: "Operação resgata trabalhadores em situação análoga à escravidão no Maranhão"
 date: 2026-09-22
 description: "Fiscalização identificou trabalhadores submetidos a condições degradantes em uma propriedade rural."
