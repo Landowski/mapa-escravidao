@@ -1,8 +1,128 @@
-<html>
-    <head>
-        <title>Mapa da Escravidão</title>
-    </head>
-    <body>
-        EM BREVE
-    </body>
-</html>
+---
+layout: modelo
+title: "Mapa da Escravidão"
+description: "O Mapa da Escravidão utiliza os dados oficiais para demonstrar o trabalho análogo à escravidão no Brasil."
+permalink: /
+---             
+        <div style="height: 40px"></div>
+
+        <div class="container">
+            <section class="carta">
+                <div class="carta-div">
+                    <div class="carta-nome">
+                        <span class="carta-compromisso">Carta Compromisso</span>
+                        <span class="tirar-brasil">para tirar o Brasil do mapa da</span>
+                        <span class="escravidao-contemporanea">ESCRAVIDÃO CONTEMPORÂNEA</span>
+                    </div>
+                    <a href="#" class="mostrar">Mostrar</a>
+                </div>
+                <div class="hidden">
+                    <p style="margin: 15px 0; margin-top: 25px;">A Lei Áurea ainda é um projeto inacabado. Estimativas citadas no Roteiro Estratégico para a Aliança 8.7, elaborado pelo governo brasileiro com apoio da OIT, apontam cerca de 1 milhão de pessoas em situação de trabalho forçado no país.</p>
+                    <p style="margin-bottom: 25px;">A Carta Compromisso reúne candidatos e autoridades dispostos a assumir, publicamente, o combate ao trabalho análogo à escravidão como prioridade permanente, com o fortalecimento da Inspeção do Trabalho e a proteção dos trabalhadores resgatados.</p>
+                    <a href="/carta" class="mostrar">Aderir à Carta Compromisso</a>
+                </div>
+            </section>
+        </div>
+
+        <section class="ultimas-noticias">
+            <div class="container">
+
+                {% assign noticias = site.posts | slice: 0, 4 %}
+                {% if noticias.size > 0 %}
+                    {% assign principal = noticias[0] %}
+                        <article class="noticia-principal">
+                            <h1 class="title"><a href="{{ principal.url | relative_url }}">{{ principal.title }}</a></h1>
+                            {% if principal.description %}
+                                <p>{{ principal.description }}</p>
+                            {% endif %}
+                            <a class="leia-mais" href="{{ principal.url | relative_url }}">Leia mais →</a>
+                        </article>
+
+                        <div class="noticias-grid">
+                            {% for post in noticias offset:1 %}
+                                <article class="noticia-card">
+                                    <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+                                    {% if post.description %}
+                                    <p>{{ post.description }}</p>
+                                    {% endif %}
+                                    <a class="leia-mais" href="{{ post.url | relative_url }}">Leia mais →</a>
+                                </article>
+                            {% endfor %}
+                        </div>
+
+                {% endif %}
+
+                <a href="/noticias" class="todas-noticias">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18h-5"/><path d="M18 14h-8"/><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-4 0v-9a2 2 0 0 1 2-2h2"/><rect width="8" height="4" x="10" y="6" rx="1"/></svg>
+                    Todas as notícias
+                </a>
+
+            </div>
+         </section>
+
+        <section class="apoiadores-section" id="apoiadores">
+            <div class="container" style="max-width: 424px;">
+
+                <div class="apoiadores-container">
+
+                    <h2 class="title" style="text-align: center; font-size: 2rem">Apoiadores</h2>
+                    <div class="card-apoiador">
+                        <img src="https://placehold.co/90" width="90" height="90"/>
+                        <div class="card-apoiador-div">
+                            <span class="nome-apoiador">Nome do Apoiador Ordem Alfabética</span>
+                            <a href="#" class="apoiador-carta">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M7 8h8"/><path d="M7 12h10"/><path d="M7 16h6"/></svg>
+                                Carta
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card-apoiador">
+                        <img src="https://placehold.co/90" width="90" height="90"/>
+                        <div class="card-apoiador-div">
+                            <span class="nome-apoiador">Nome do Apoiador 2</span>
+                            <a href="#" class="apoiador-carta">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M7 8h8"/><path d="M7 12h10"/><path d="M7 16h6"/></svg>
+                                Carta
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="more-section" style="margin-top: 30px;">
+            <div class="container">
+
+                <h2 class="title">Mapa da Escravidão</h2>
+
+                <p>O Mapa da Escravidão reúne, em uma visualização interativa, os dados oficiais sobre trabalhadores resgatados de condições análogas à escravidão em cada Estado brasileiro.</p>
+
+                <p>Ao selecionar um Estado, é possível consultar o número de resgates, as atividades econômicas envolvidas e a evolução dos casos ao longo dos anos. O objetivo é mostrar onde o problema se concentra e como ele se distribui pelo território nacional.</p>
+
+                <a href="/mapa-escravidao" class="todas-noticias">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8c0 3.613-3.869 7.429-5.393 8.795a1 1 0 01-1.214 0C9.87 15.429 6 11.613 6 8a6 6 0 0112 0"/><path d="M4.474 15h-.197a1 1 0 00-.969.753l-1.097 4.35a1.5 1.5 0 001.444 1.898L20.344 22a1.5 1.5 0 001.446-1.897l-1.098-4.35a1 1 0 00-.969-.753h-.197"/><circle cx="12" cy="8" r="2"/></svg>
+                    Acessar o Mapa da Escravidão
+                </a>
+
+            </div>
+        </section>
+
+        <section class="more-section">
+            <div class="container">
+
+                <h2 class="title">Transparência</h2>
+                
+                <p>Todos os números publicados no site vêm de fontes oficiais do governo brasileiro e de organismos internacionais, sem tratamento que altere seu significado.</p>
+
+                <p>Na página de Transparência, você encontra a origem de cada conjunto de dados, o período que ele cobre e os links para as bases originais, para que qualquer pessoa possa conferir as informações e reproduzir as análises.</p>
+
+                <a href="/transparencia" class="todas-noticias">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+                    Acessar as fontes e metodologias
+                </a>
+
+            </div>
+        </section>

@@ -1,0 +1,10 @@
+theme: null
+title: "Mapa da Escravidão"
+description: "Carta compromisso para tirar o Brasil do mapa da escravidão contemporânea."
+url: "https://mapadaescravidao.com.br"
+paginate: 10
+paginate_path: "/noticias/page:num/"
+permalink: /noticias/:title/
+plugins:
+  - jekyll-sitemap
+  - jekyll-paginate
