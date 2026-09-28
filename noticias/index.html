@@ -1,0 +1,39 @@
+---
+layout: modelo
+title: "Notícias - Mapa da Escravidão"
+description: "Notícias sobre resgates de trabalhadores do trabalho análogo à escravidão."
+---
+        <section class="lista-noticias">
+            <div class="container">
+
+                <h1 class="title">Notícias</h1>
+                
+                <p>Confira as notícias sobre resgates de trabalhadores do trabalho análogo à escravidão.</p>
+
+                    {% for post in paginator.posts %}
+                        <a href="{{ post.url | relative_url }}" class="item-noticia">
+                        <h3>{{ post.title }}</h3>
+                        {% if post.description %}
+                        <p>{{ post.description }}</p>
+                        {% endif %}
+                        </a>
+                    {% endfor %}
+
+                    <nav class="paginacao">
+                        {% if paginator.previous_page %}
+                            <a href="{{ paginator.previous_page_path | relative_url }}">
+                            ← Mais recentes
+                            </a>
+                        {% endif %}
+                        <span>
+                            Página {{ paginator.page }} de {{ paginator.total_pages }}
+                        </span>
+                        {% if paginator.next_page %}
+                            <a href="{{ paginator.next_page_path | relative_url }}">
+                            Mais antigas →
+                            </a>
+                        {% endif %}
+                    </nav>
+
+            </div>
+        </section>
