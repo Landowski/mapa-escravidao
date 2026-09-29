@@ -11,13 +11,6 @@ collections:
     output: true
     permalink: /mapa-escravidao/:name/
 
-defaults:
-  - scope:
-      path: ""
-      type: "estados"
-    values:
-      layout: modelo
-
 plugins:
   - jekyll-sitemap
   - jekyll-paginate
