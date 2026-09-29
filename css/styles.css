@@ -236,7 +236,7 @@ h2 {
 .noticia-principal { border-bottom: 1px solid #d8d8d8; }
 
 .noticia-principal h1, .noticia-principal h1 a {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     line-height: 1.08;
     color: var(--preto);
     text-decoration: none;
@@ -436,6 +436,9 @@ h2 {
 
     .secao-titulo h2 { font-size: 30px; }
     .noticia-principal { padding: 28px 0 32px; }
+	.noticia-principal h1, .noticia-principal h1 a {
+	    font-size: 1.8rem;
+	}
     .noticia-principal h3 { font-size: 34px; }
     .noticia-principal p { font-size: 15px; }
     .noticias-grid { grid-template-columns: 1fr; gap: 0; }
