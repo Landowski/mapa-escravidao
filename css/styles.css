@@ -44,6 +44,10 @@ body {
     outline: none;
 }
 
+h1, h2, h3 {
+	color: var(--preto);
+}
+
 h2 {
     margin-bottom: 15px;
 }
@@ -51,7 +55,7 @@ h2 {
 h4 {
 	margin-bottom: 20px;
     font-size: 1.1rem;
-    color: var(--azul);
+    color: var(--azul) !important;
 }
 
 ul {
