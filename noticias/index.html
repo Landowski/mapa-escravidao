@@ -12,7 +12,7 @@ description: "Notícias sobre resgates de trabalhadores do trabalho análogo à 
 
                     {% for post in paginator.posts %}
                         <a href="{{ post.url | relative_url }}" class="item-noticia">
-                        <h3>{{ post.title }}</h3>
+                        <h3 style="color:var(--azul)">{{ post.title }}</h3>
                         {% if post.description %}
                         <p>{{ post.description }}</p>
                         {% endif %}
@@ -21,7 +21,7 @@ description: "Notícias sobre resgates de trabalhadores do trabalho análogo à 
 
                     <nav class="paginacao" style="margin-top: 40px;">
                         {% if paginator.previous_page %}
-                            <a href="{{ paginator.previous_page_path | relative_url }}">
+                            <a href="{{ paginator.previous_page_path | relative_url }}" style="color:var(--azul)">
                             ← Mais recentes
                             </a>
                         {% endif %}
@@ -29,7 +29,7 @@ description: "Notícias sobre resgates de trabalhadores do trabalho análogo à 
                             Página {{ paginator.page }} de {{ paginator.total_pages }}
                         </span>
                         {% if paginator.next_page %}
-                            <a href="{{ paginator.next_page_path | relative_url }}">
+                            <a href="{{ paginator.next_page_path | relative_url }}" style="color:var(--azul)">
                             Mais antigas →
                             </a>
                         {% endif %}
