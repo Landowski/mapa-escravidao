@@ -1,9 +1,264 @@
-- nome: "Fulano da Silva"
+- nome: "Alexandre Lindenmeyer"
+  foto: "/imagens/apoiadores/foto1.png"
+  estado: "Rio Grande do Sul"
+  carta: "#"
+
+- nome: "Alice Portugal"
+  foto: "/imagens/apoiadores/foto2.png"
+  estado: "Bahia"
+  carta: "#"
+
+- nome: "Ana Paula Lima"
+  foto: "/imagens/apoiadores/foto2.png"
+  estado: "Santa Catarina"
+  carta: "#"
+
+- nome: "Beatriz Cerqueira"
+  foto: "/imagens/apoiadores/foto2.png"
+  estado: "Minas Gerais"
+  carta: "#"
+
+- nome: "Bohn Gass"
+  foto: "/imagens/apoiadores/foto1.png"
+  estado: "Rio Grande do Sul"
+  carta: "#"
+
+- nome: "Carlos Giannazi"
   foto: "/imagens/apoiadores/foto1.png"
   estado: "São Paulo"
   carta: "#"
 
-- nome: "Beltrana de Tal"
+- nome: "Carlos Veras"
+  foto: "/imagens/apoiadores/foto1.png"
+  estado: "Pernambuco"
+  carta: "#"
+
+- nome: "Carol Dartora"
+  foto: "/imagens/apoiadores/foto2.png"
+  estado: "Paraná"
+  carta: "#"
+
+- nome: "Chico Alencar"
+  foto: "/imagens/apoiadores/foto1.png"
+  estado: "Rio de Janeiro"
+  carta: "#"
+
+- nome: "Daiana Santos"
+  foto: "/imagens/apoiadores/foto2.png"
+  estado: "Rio Grande do Sul"
+  carta: "#"
+
+- nome: "Dandara Tonantzin"
   foto: "/imagens/apoiadores/foto2.png"
   estado: "Minas Gerais"
+  carta: "#"
+
+- nome: "Delegada Nadine"
+  foto: "/imagens/apoiadores/foto2.png"
+  estado: "Rio Grande do Sul"
+  carta: "#"
+
+- nome: "Denise Pessoa"
+  foto: "/imagens/apoiadores/foto2.png"
+  estado: "Rio Grande do Sul"
+  carta: "#"
+
+- nome: "Duda Salabert"
+  foto: "/imagens/apoiadores/foto2.png"
+  estado: "Minas Gerais"
+  carta: "#"
+
+- nome: "Eduardo Reiner"
+  foto: "/imagens/apoiadores/foto1.png"
+  estado: "Paraná"
+  carta: "#"
+
+- nome: "Elida Miranda"
+  foto: "/imagens/apoiadores/foto2.png"
+  estado: "Alagoas"
+  carta: "#"
+
+- nome: "Erika Takimoto"
+  foto: "/imagens/apoiadores/foto2.png"
+  estado: "Rio de Janeiro"
+  carta: "#"
+
+- nome: "Eva Valéria"
+  foto: "/imagens/apoiadores/foto2.png"
+  estado: "Rio Grande do Sul"
+  carta: "#"
+
+- nome: "Fernanda Melchionna"
+  foto: "/imagens/apoiadores/foto2.png"
+  estado: "Rio Grande do Sul"
+  carta: "#"
+
+- nome: "Fernando Mineiro"
+  foto: "/imagens/apoiadores/foto1.png"
+  estado: "Rio Grande do Norte"
+  carta: "#"
+
+- nome: "Gilmar Machado"
+  foto: "/imagens/apoiadores/foto1.png"
+  estado: "Minas Gerais"
+  carta: "#"
+
+- nome: "Glauber Braga"
+  foto: "/imagens/apoiadores/foto1.png"
+  estado: "Rio de Janeiro"
+  carta: "#"
+
+- nome: "Isolda Dantas"
+  foto: "/imagens/apoiadores/foto2.png"
+  estado: "Rio Grande do Norte"
+  carta: "#"
+
+- nome: "Jilmar Tatto"
+  foto: "/imagens/apoiadores/foto1.png"
+  estado: "São Paulo"
+  carta: "#"
+
+- nome: "Jones Manoel"
+  foto: "/imagens/apoiadores/foto1.png"
+  estado: "Pernambuco"
+  carta: "#"
+
+- nome: "Leonel Radde"
+  foto: "/imagens/apoiadores/foto1.png"
+  estado: "Rio Grande do Sul"
+  carta: "#"
+
+- nome: "Lohanna França"
+  foto: "/imagens/apoiadores/foto2.png"
+  estado: "Minas Gerais"
+  carta: "#"
+
+- nome: "Lucas Sidrach"
+  foto: "/imagens/apoiadores/foto1.png"
+  estado: "Minas Gerais"
+  carta: "#"
+
+- nome: "Luciana Genro"
+  foto: "/imagens/apoiadores/foto2.png"
+  estado: "Rio Grande do Sul"
+  carta: "#"
+
+- nome: "Lúdio Cabral"
+  foto: "/imagens/apoiadores/foto1.png"
+  estado: "Mato Grosso"
+  carta: "#"
+
+- nome: "Manuela D'Ávila"
+  foto: "/imagens/apoiadores/foto2.png"
+  estado: "Rio Grande do Sul"
+  carta: "#"
+
+- nome: "Maria do Rosário"
+  foto: "/imagens/apoiadores/foto2.png"
+  estado: "Rio Grande do Sul"
+  carta: "#"
+
+- nome: "Mário Diniz"
+  foto: "/imagens/apoiadores/foto1.png"
+  estado: "Bahia"
+  carta: "#"
+
+- nome: "Marivaldo Pereira"
+  foto: "/imagens/apoiadores/foto1.png"
+  estado: "Distrito Federal"
+  carta: "#"
+
+- nome: "Miguel Rossetto"
+  foto: "/imagens/apoiadores/foto1.png"
+  estado: "Rio Grande do Sul"
+  carta: "#"
+
+- nome: "Natália Bonavides"
+  foto: "/imagens/apoiadores/foto2.png"
+  estado: "Rio Grande do Norte"
+  carta: "#"
+
+- nome: "Padre João"
+  foto: "/imagens/apoiadores/foto1.png"
+  estado: "Minas Gerais"
+  carta: "#"
+
+- nome: "Pedro Uczai"
+  foto: "/imagens/apoiadores/foto1.png"
+  estado: "Santa Catarina"
+  carta: "#"
+
+- nome: "Philipe do VAT"
+  foto: "/imagens/apoiadores/foto1.png"
+  estado: "Rio Grande do Norte"
+  carta: "#"
+
+- nome: "Pimenta"
+  foto: "/imagens/apoiadores/foto1.png"
+  estado: "Rio Grande do Sul"
+  carta: "#"
+
+- nome: "Prof Luciene Cavalcante"
+  foto: "/imagens/apoiadores/foto2.png"
+  estado: "São Paulo"
+  carta: "#"
+
+- nome: "Reginaldo Lopes"
+  foto: "/imagens/apoiadores/foto1.png"
+  estado: "Minas Gerais"
+  carta: "#"
+
+- nome: "Reginaldo Veras"
+  foto: "/imagens/apoiadores/foto1.png"
+  estado: "Distrito Federal"
+  carta: "#"
+
+- nome: "Reimont"
+  foto: "/imagens/apoiadores/foto1.png"
+  estado: "Rio de Janeiro"
+  carta: "#"
+
+- nome: "Rogério Correia"
+  foto: "/imagens/apoiadores/foto1.png"
+  estado: "Minas Gerais"
+  carta: "#"
+
+- nome: "Samia Bomfim"
+  foto: "/imagens/apoiadores/foto2.png"
+  estado: "São Paulo"
+  carta: "#"
+
+- nome: "Sonia Guajajara"
+  foto: "/imagens/apoiadores/foto2.png"
+  estado: "São Paulo"
+  carta: "#"
+
+- nome: "Tadeu Veneri"
+  foto: "/imagens/apoiadores/foto1.png"
+  estado: "Paraná"
+  carta: "#"
+
+- nome: "Tarcísio Motta"
+  foto: "/imagens/apoiadores/foto1.png"
+  estado: "Rio de Janeiro"
+  carta: "#"
+
+- nome: "Virgilio Viana"
+  foto: "/imagens/apoiadores/foto1.png"
+  estado: "Acre"
+  carta: "#"
+
+- nome: "Vivi Reis"
+  foto: "/imagens/apoiadores/foto2.png"
+  estado: "Pará"
+  carta: "#"
+
+- nome: "Waldenor Pereira"
+  foto: "/imagens/apoiadores/foto1.png"
+  estado: "Bahia"
+  carta: "#"
+
+- nome: "Zé Dirceu"
+  foto: "/imagens/apoiadores/foto1.png"
+  estado: "São Paulo"
   carta: "#"
