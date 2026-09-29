@@ -65,7 +65,7 @@ ul {
 }
 
 li::marker {
-  color: var(--azul);
+  color: #b8860b;
 }
 
 .container-header {
@@ -427,7 +427,7 @@ li::marker {
 }
 
 .abertura {
-	border-left: 4px solid var(--azul);
+	border-left: 4px solid #b8860b;
     padding-left: 8px;
     color: var(--azul);
 }
