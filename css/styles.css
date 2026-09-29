@@ -324,6 +324,11 @@ h2 {
     font-weight: 700;
 }
 
+.estado-apoiador {
+    font-size: 0.8rem;
+    color: var(--texto);
+}
+
 .apoiador-carta {
     width: fit-content;
     display: flex;
