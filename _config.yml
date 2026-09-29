@@ -5,6 +5,12 @@ url: "https://mapadaescravidao.com.br"
 paginate: 10
 paginate_path: "/noticias/page:num/"
 permalink: /noticias/:title/
+
+collections:
+  estados:
+    output: true
+    permalink: /mapa-escravidao/:name/
+
 plugins:
   - jekyll-sitemap
   - jekyll-paginate
