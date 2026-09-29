@@ -56,6 +56,12 @@ h4 {
 
 ul {
 	margin-bottom: 35px;
+	list-style-type: square;
+  	padding-left: 20px; 
+}
+
+li::marker {
+  color: var(--azul);
 }
 
 .container-header {
