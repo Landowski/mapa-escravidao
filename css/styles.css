@@ -3,7 +3,7 @@
     --fonte-titulo: "Merriweather", serif;
     --preto: #051538;
     --azul: #1a4bb9;
-    --texto: #333;
+    --texto: #555;
     --menu: #666;
     --link: #2979FF;
 }
@@ -401,8 +401,8 @@ h2 {
 .item-noticia p {
     margin: 0;
     color: var(--texto);
-    font-size: 1.2rem;
-    line-height: 1.4;
+    font-size: 1.1rem;
+    line-height: 1.3;
 }
 
 .container-footer {
@@ -445,10 +445,10 @@ h2 {
         padding: 22px 0;
     }
     .item-noticia h3 {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
     .item-noticia p {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
 }
