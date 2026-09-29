@@ -364,7 +364,7 @@ li::marker {
     gap: 4px;
 }
 
-.ion {
+.more-section {
     padding: 40px 0;
 }
 
@@ -400,6 +400,10 @@ li::marker {
     text-decoration: none;
     color: var(--preto);
     gap: 10px;
+}
+
+.estado a:hover {
+	color: var(--link);
 }
 
 .lista-noticias {
