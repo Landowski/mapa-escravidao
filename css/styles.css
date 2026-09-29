@@ -375,10 +375,6 @@ h2 {
     gap: 10px;
 }
 
-.estado a:last-child {
-  border-bottom: none;
-}
-
 .lista-noticias {
     width: 100%;
 	padding: 40px 0;
