@@ -9,7 +9,7 @@ permalink: /noticias/:title/
 collections:
   estados:
     output: true
-    permalink: /mapa-escravidao/:name/
+    permalink: /mapa-escravidao/:name
 
 plugins:
   - jekyll-sitemap
