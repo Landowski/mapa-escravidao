@@ -1,7 +1,9 @@
 - nome: "Fulano da Silva"
-  foto: "/imagens/apoiadores/foto1.png"
+  foto: "https://placehold.co/90"
+  estado: "São Paulo"
   carta: "#"
 
 - nome: "Beltrana de Tal"
-  foto: "/imagens/apoiadores/foto2.png"
+  foto: "https://placehold.co/90"
+  estado: "Minas Gerais"
   carta: "#"
