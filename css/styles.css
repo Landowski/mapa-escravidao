@@ -406,6 +406,12 @@ h2 {
     text-decoration: underline;
 }
 
+.abertura {
+	border-left: 4px solid var(--azul);
+    padding-left: 8px;
+    color: var(--azul);
+}
+
 .item-noticia p {
     margin: 0;
     color: var(--texto);
