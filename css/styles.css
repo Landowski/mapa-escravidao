@@ -297,7 +297,7 @@ li::marker {
 }
 
 .todas-noticias {
-    display: flex;
+    display: flex !important;
     align-items: center;
     width: fit-content;
     gap: 10px;
@@ -381,6 +381,10 @@ li::marker {
 
 .more-section p, .fixo p {
     margin-bottom: 20px;
+}
+
+.more-section a, .fixo a {
+	text-decoration: none;
 }
 
 .more-section a:hover, .fixo a:hover {
