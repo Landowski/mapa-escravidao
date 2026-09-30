@@ -383,6 +383,12 @@ li::marker {
     margin-bottom: 20px;
 }
 
+.more-section a, fixo a {
+	display: inline-block;
+	text-decoration: none;
+	color: var(--link);
+}
+
 .iframe {
     padding: 7px;
     border: 0;
