@@ -364,22 +364,22 @@ li::marker {
     gap: 4px;
 }
 
-.more-section {
+.more-section, .fixo {
     padding: 40px 0;
 }
 
-.more-section img {
+.fixo img {
     width: 100%;
 	height: auto;
 	margin-bottom: 20px;
 }
 
-.more-section h1, .noticias h1 {
+.more-section h1, .noticias h1, .fixo h1 {
 	margin-bottom: 20px;
 	line-height: 1.3;
 }
 
-.more-section p {
+.more-section p, .fixo p {
     margin-bottom: 20px;
 }
 
