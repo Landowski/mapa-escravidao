@@ -389,6 +389,10 @@ li::marker {
 	color: var(--link);
 }
 
+.more-section a:hover, fixo a:hover {
+	text-decoration: underline;
+}
+
 .iframe {
     padding: 7px;
     border: 0;
