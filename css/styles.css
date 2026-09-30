@@ -385,6 +385,7 @@ li::marker {
 
 .more-section a, .fixo a {
 	text-decoration: none;
+	color: var(--link);
 }
 
 .more-section a:hover, .fixo a:hover {
