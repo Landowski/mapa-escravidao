@@ -371,6 +371,7 @@ li::marker {
 .more-section img {
     width: 100%;
 	height: auto;
+	margin-bottom: 20px;
 }
 
 .more-section h1, .noticias h1 {
