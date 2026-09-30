@@ -383,7 +383,7 @@ li::marker {
     margin-bottom: 20px;
 }
 
-.more-section a, fixo a {
+.more-section a, .fixo a {
 	display: inline-block;
 	text-decoration: none;
 	color: var(--link);
