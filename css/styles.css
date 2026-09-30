@@ -368,6 +368,11 @@ li::marker {
     padding: 40px 0;
 }
 
+.more-section img {
+    width: 100%;
+	height: auto;
+}
+
 .more-section h1, .noticias h1 {
 	margin-bottom: 20px;
 	line-height: 1.3;
