@@ -383,12 +383,6 @@ li::marker {
     margin-bottom: 20px;
 }
 
-.more-section a, .fixo a {
-	display: inline-block;
-	text-decoration: none;
-	color: var(--link);
-}
-
 .more-section a:hover, .fixo a:hover {
 	text-decoration: underline;
 }
