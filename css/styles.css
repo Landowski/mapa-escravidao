@@ -304,7 +304,7 @@ li::marker {
     font-family: var(--fonte-titulo);
     font-size: 1.2rem;
     margin: 30px 0;
-    color: var(--azul);
+    color: var(--link);
     text-decoration: none;
 }
 
