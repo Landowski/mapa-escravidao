@@ -46,14 +46,10 @@ body {
 
 h1, h2, h3, .destaque {
 	color: var(--preto);
-}
-
-h2 {
-    margin-bottom: 15px;
+	margin-bottom: 20px;
 }
 
 h4 {
-	margin-bottom: 20px;
     font-size: 1.1rem;
     color: var(--azul) !important;
 }
