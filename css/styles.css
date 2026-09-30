@@ -389,7 +389,7 @@ li::marker {
 	color: var(--link);
 }
 
-.more-section a:hover, fixo a:hover {
+.more-section a:hover, .fixo a:hover {
 	text-decoration: underline;
 }
 
