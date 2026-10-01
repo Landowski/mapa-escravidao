@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow, noarchive">
+
+    <title>Postador</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 30px 15px;
+            background: #f5f5f5;
+            color: #222;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .editor {
+            display: flex;
+            gap: 40px;
+            justify-content: space-between;
+            width: 100%;
+            margin: 0 auto;
+            background: #fff;
+            padding: 30px;
+            border: 1px solid #ddd;
+        }
+
+        .separador {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        h1 {
+            margin: 0 0 30px;
+            font-size: 24px;
+        }
+
+        .campo {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 7px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 11px 12px;
+            border: 1px solid #ccc;
+            font-size: 15px;
+            outline: none;
+        }
+
+        input:focus {
+            border-color: #777;
+        }
+
+        .toolbar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            padding: 8px;
+            background: #eee;
+            border: 1px solid #ccc;
+            border-bottom: none;
+        }
+
+        .toolbar button {
+            min-width: 38px;
+            padding: 7px 10px;
+            border: 1px solid #bbb;
+            background: #fff;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .toolbar button:hover {
+            background: #ddd;
+        }
+
+        #post {
+            min-height: 400px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            outline: none;
+            font-size: 16px;
+            line-height: 1.6;
+            background: #fff;
+        }
+
+        #post:focus {
+            border-color: #777;
+        }
+
+        #post p {
+            margin: 0 0 15px;
+        }
+
+        #post h1,
+        #post h2,
+        #post h3,
+        #post h4 {
+            margin-top: 25px;
+            margin-bottom: 12px;
+        }
+
+        #post ul {
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .botoes {
+            display: flex;
+            gap: 10px;
+            margin-top: 25px;
+        }
+
+        .botoes button {
+            padding: 12px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        #gerar {
+            background: #222;
+            color: #fff;
+        }
+
+        #gerar:hover {
+            background: #000;
+        }
+
+        #limpar {
+            background: #ddd;
+            color: #222;
+        }
+
+        #limpar:hover {
+            background: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="editor">
+
+    <div class="separador">
+
+        <div class="campo">
+            <label for="titulo">Título</label>
+            <input
+                type="text"
+                id="titulo"
+                placeholder="Digite o título do post"
+            >
+        </div>
+
+        <div class="campo">
+            <label for="data">Data</label>
+            <input
+                type="text"
+                id="data"
+                maxlength="10"
+                placeholder="yyyy-mm-dd"
+                inputmode="numeric"
+            >
+        </div>
+
+        <div class="campo">
+            <label for="descricao">Descrição</label>
+            <input
+                type="text"
+                id="descricao"
+                placeholder="Digite a descrição do post"
+            >
+        </div>
+
+        <div class="campo">
+            <label for="url">URL (slug)</label>
+            <input
+                type="text"
+                id="url"
+                placeholder="minha-url-slug-aqui"
+            >
+        </div>
+
+        <div class="campo">
+            <label for="fonte">Fonte</label>
+            <input
+                type="text"
+                id="fonte"
+                placeholder="https://..."
+            >
+        </div>
+    
+    </div>
+
+    <div class="separador">
+
+        <div class="campo">
+
+            <label>Post</label>
+
+            <div class="toolbar">
+
+                <button type="button" data-command="bold">
+                    B
+                </button>
+
+                <button type="button" data-command="formatBlock" data-value="h1">
+                    H1
+                </button>
+
+                <button type="button" data-command="formatBlock" data-value="h2">
+                    H2
+                </button>
+
+                <button type="button" data-command="formatBlock" data-value="h3">
+                    H3
+                </button>
+
+                <button type="button" data-command="formatBlock" data-value="h4">
+                    H4
+                </button>
+
+                <button type="button" data-command="formatBlock" data-value="p">
+                    P
+                </button>
+
+                <button type="button" data-command="insertUnorderedList">
+                    • Lista
+                </button>
+
+            </div>
+
+            <div
+                id="post"
+                contenteditable="true"
+                spellcheck="true"
+            ></div>
+
+        </div>
+
+        <div class="botoes">
+
+            <button type="button" id="gerar">
+                Gerar Post
+            </button>
+
+            <button type="button" id="limpar">
+                Limpar tudo
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script>
+
+    /*
+    ============================================================
+    MÁSCARA DA DATA
+    ============================================================
+    */
+
+    const campoData = document.getElementById("data");
+
+    campoData.addEventListener("input", function () {
+
+        let valor = this.value.replace(/\D/g, "");
+
+        if (valor.length > 4) {
+            valor =
+                valor.substring(0, 4) +
+                "-" +
+                valor.substring(4);
+        }
+
+        if (valor.length > 7) {
+            valor =
+                valor.substring(0, 7) +
+                "-" +
+                valor.substring(7);
+        }
+
+        this.value = valor.substring(0, 10);
+
+    });
+
+
+    /*
+    ============================================================
+    EDITOR
+    ============================================================
+    */
+
+    const post = document.getElementById("post");
+
+    post.innerHTML = "<p><br></p>";
+
+    /*
+    ============================================================
+    COLAR TEXTO SEM FORMATAÇÃO
+    ============================================================
+    */
+
+    post.addEventListener("paste", function (event) {
+
+        event.preventDefault();
+
+        const texto = event.clipboardData.getData("text/plain");
+
+        document.execCommand(
+            "insertText",
+            false,
+            texto
+        );
+
+        salvarSelecao();
+
+    });
+
+    let ultimaSelecao = null;
+
+
+    function salvarSelecao() {
+
+        const selecao = window.getSelection();
+
+        if (
+            selecao.rangeCount > 0 &&
+            post.contains(selecao.anchorNode)
+        ) {
+            ultimaSelecao = selecao.getRangeAt(0);
+        }
+
+    }
+
+
+    post.addEventListener("keyup", salvarSelecao);
+    post.addEventListener("mouseup", salvarSelecao);
+    post.addEventListener("input", salvarSelecao);
+
+
+    /*
+    ============================================================
+    BOTÕES DA TOOLBAR
+    ============================================================
+    */
+
+    document.querySelectorAll(".toolbar button").forEach(function (botao) {
+
+        botao.addEventListener("mousedown", function (event) {
+
+            event.preventDefault();
+
+            salvarSelecao();
+
+            const comando = this.dataset.command;
+            const valor = this.dataset.value;
+
+            if (ultimaSelecao) {
+
+                const selecao = window.getSelection();
+
+                selecao.removeAllRanges();
+                selecao.addRange(ultimaSelecao);
+
+            }
+
+            document.execCommand(
+                comando,
+                false,
+                valor || null
+            );
+
+            post.focus();
+
+            salvarSelecao();
+
+        });
+
+    });
+
+
+    /*
+    ============================================================
+    LIMPEZA DO HTML DO EDITOR
+    ============================================================
+    */
+
+    function limparHTML(elemento) {
+
+    const permitido = [
+        "P",
+        "H1",
+        "H2",
+        "H3",
+        "H4",
+        "UL",
+        "LI",
+        "STRONG",
+        "B"
+    ];
+
+        function limparNo(no) {
+
+            if (no.nodeType === Node.TEXT_NODE) {
+                return;
+            }
+
+            if (
+                no.nodeType === Node.ELEMENT_NODE &&
+                !permitido.includes(no.tagName)
+            ) {
+
+                const fragmento = document.createDocumentFragment();
+
+                while (no.firstChild) {
+                    fragmento.appendChild(no.firstChild);
+                }
+
+                no.replaceWith(fragmento);
+
+                return;
+            }
+
+            Array.from(no.childNodes).forEach(limparNo);
+
+        }
+
+        Array.from(elemento.childNodes).forEach(limparNo);
+
+    }
+
+
+    /*
+    ============================================================
+    OBTÉM O CONTEÚDO DO POST
+    ============================================================
+    */
+
+    function obterConteudoPost() {
+
+        limparHTML(post);
+
+        const fragmento = document.createDocumentFragment();
+
+        Array.from(post.childNodes).forEach(function (node) {
+
+            /*
+            Blocos que já possuem formatação própria
+            permanecem como estão.
+            */
+
+            if (
+                node.nodeType === Node.ELEMENT_NODE &&
+                ["P", "H1", "H2", "H3", "H4", "UL"].includes(node.tagName)
+            ) {
+
+                fragmento.appendChild(node.cloneNode(true));
+                return;
+
+            }
+
+
+            /*
+            Texto sem formatação é dividido pelas
+            quebras de linha e transformado em <p>.
+            */
+
+            const texto = node.textContent;
+
+            texto
+                .split(/\r?\n/)
+                .forEach(function (linha) {
+
+                    if (!linha.trim()) {
+                        return;
+                    }
+
+                    const p = document.createElement("p");
+
+                    p.textContent = linha;
+
+                    fragmento.appendChild(p);
+
+                });
+
+        });
+
+
+        /*
+        Converte o fragmento para HTML.
+        */
+
+        const container = document.createElement("div");
+
+        container.appendChild(fragmento);
+
+        return container.innerHTML.trim();
+
+    }
+
+
+    /*
+    ============================================================
+    ESCAPA TEXTO PARA O FRONT MATTER
+    ============================================================
+    */
+
+    function escaparFrontMatter(texto) {
+
+        return texto
+            .replace(/\\/g, "\\\\")
+            .replace(/"/g, '\\"')
+            .replace(/\r?\n/g, " ");
+
+    }
+
+
+    /*
+    ============================================================
+    ESCAPA HTML
+    ============================================================
+    */
+
+    function escaparHTML(texto) {
+
+        const div = document.createElement("div");
+
+        div.textContent = texto;
+
+        return div.innerHTML;
+
+    }
+
+
+    /*
+    ============================================================
+    GERA O NOME DO ARQUIVO
+    ============================================================
+    */
+
+    function gerarNomeArquivo(data, slug) {
+
+        /*
+        Remove barras, espaços nas extremidades e
+        garante que o slug não tenha .html duplicado.
+        */
+
+        slug = slug
+            .trim()
+            .replace(/^\/+|\/+$/g, "")
+            .replace(/\.html$/i, "");
+
+        return data + "-" + slug + ".html";
+
+    }
+
+
+    /*
+    ============================================================
+    GERA O POST
+    ============================================================
+    */
+
+    document.getElementById("gerar").addEventListener("click", function () {
+
+        const titulo =
+            document.getElementById("titulo").value.trim();
+
+        const data =
+            document.getElementById("data").value.trim();
+
+        const descricao =
+            document.getElementById("descricao").value.trim();
+
+        const slug =
+            document.getElementById("url").value.trim();
+
+        const fonte =
+            document.getElementById("fonte").value.trim();
+
+        const conteudo =
+            obterConteudoPost();
+
+
+        /*
+        ========================================================
+        VALIDAÇÕES
+        ========================================================
+        */
+
+        if (!titulo) {
+            alert("Informe o título.");
+            document.getElementById("titulo").focus();
+            return;
+        }
+
+
+        if (!/^\d{4}-\d{2}-\d{2}$/.test(data)) {
+            alert("Informe a data no formato yyyy-mm-dd.");
+            document.getElementById("data").focus();
+            return;
+        }
+
+
+        if (!descricao) {
+            alert("Informe a descrição.");
+            document.getElementById("descricao").focus();
+            return;
+        }
+
+
+        if (!slug) {
+            alert("Informe a URL (slug).");
+            document.getElementById("url").focus();
+            return;
+        }
+
+
+        if (!fonte) {
+            alert("Informe a fonte.");
+            document.getElementById("fonte").focus();
+            return;
+        }
+
+
+        if (!conteudo) {
+            alert("Escreva o conteúdo do post.");
+            post.focus();
+            return;
+        }
+
+
+        /*
+        ========================================================
+        PREPARAÇÃO DOS DADOS
+        ========================================================
+        */
+
+        const tituloSeguro =
+            escaparHTML(titulo);
+
+        const descricaoFront =
+            escaparFrontMatter(descricao);
+
+        const fonteSeguro =
+            escaparHTML(fonte);
+
+
+        /*
+        ========================================================
+        HTML FINAL
+        ========================================================
+        */
+
+        const arquivo = `---
+layout: modelo
+title: "${escaparFrontMatter(titulo)}"
+date: ${data}
+description: "${descricaoFront}"
+---
+        <section class="more-section" style="margin-top: 30px;">
+            <div class="container">
+
+                <h1 class="title">${tituloSeguro}</h1>
+                
+                ${conteudo}
+
+                <p><a class="escravidao-link" href="${fonteSeguro}" target="_blank">${fonteSeguro}</a></p>
+
+            </div>
+        </section>`;
+
+
+        /*
+        ========================================================
+        DOWNLOAD
+        ========================================================
+        */
+
+        const blob = new Blob(
+            [arquivo],
+            {
+                type: "text/html;charset=utf-8"
+            }
+        );
+
+
+        const link = document.createElement("a");
+
+        link.href = URL.createObjectURL(blob);
+
+        link.download =
+            gerarNomeArquivo(data, slug);
+
+
+        document.body.appendChild(link);
+
+        link.click();
+
+        document.body.removeChild(link);
+
+        URL.revokeObjectURL(link.href);
+
+    });
+
+
+    /*
+    ============================================================
+    LIMPAR TUDO
+    ============================================================
+    */
+
+    document.getElementById("limpar").addEventListener("click", function () {
+
+        const confirmar = confirm(
+            "Tem certeza que deseja limpar todos os campos?"
+        );
+
+        if (!confirmar) {
+            return;
+        }
+
+        document.getElementById("titulo").value = "";
+        document.getElementById("data").value = "";
+        document.getElementById("descricao").value = "";
+        document.getElementById("url").value = "";
+        document.getElementById("fonte").value = "";
+
+        post.innerHTML = "";
+
+        document.getElementById("titulo").focus();
+
+    });
+
+</script>
+
+</body>
+</html>
