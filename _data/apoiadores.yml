@@ -446,7 +446,7 @@
 - nome: "Rick Azevedo"
   foto: "/imagens/apoiadores/foto1.png"
   estado: "Rio de Janeiro"
-  carta: "/arquivos/cartas/rick-azevedo.pdf"
+  carta: "/arquivos/cartas/rick-azevedo.jpg"
 
 - nome: "Valmir Assunção"
   foto: "/imagens/apoiadores/foto1.png"
@@ -493,10 +493,10 @@
   estado: "São Paulo"
   carta: "/arquivos/cartas/vicentinho.pdf"
 
-- nome: "Dr Thiago"
+- nome: "Dr. Thiago"
   foto: "/imagens/apoiadores/foto1.png"
   estado: "Rio Grande do Sul"
-  carta: "/arquivos/cartas/dr-thiago.pdf"
+  carta: "/arquivos/cartas/dr-thiago.jpg"
 
 - nome: "Gleide Andrade"
   foto: "/imagens/apoiadores/foto2.png"
@@ -591,7 +591,7 @@
 - nome: "Diego Guimarães"
   foto: "/imagens/apoiadores/foto1.png"
   estado: "Mato Grosso"
-  carta: "/arquivos/cartas/diego-guimaraes.pdf"
+  carta: "/arquivos/cartas/diego-guimaraes.jpg"
 
 - nome: "Carlos Augusto"
   foto: "/imagens/apoiadores/foto1.png"
@@ -646,7 +646,7 @@
 - nome: "Ribeiro do Sinpol"
   foto: "/imagens/apoiadores/foto1.png"
   estado: "Rondônia"
-  carta: "/arquivos/cartas/ribeiro-do-sinpol.pdf"
+  carta: "/arquivos/cartas/ribeiro-do-sinpol.jpg"
 
 - nome: "Renato Roseno"
   foto: "/imagens/apoiadores/foto1.png"
