@@ -432,3 +432,223 @@
   foto: "/imagens/apoiadores/foto2.png"
   estado: "Minas Gerais"
   carta: "/arquivos/cartas/moara-saboia.pdf"
+
+  - nome: "Marcon"
+  foto: "/imagens/apoiadores/foto1.png"
+  estado: "Rio Grande do Sul"
+  carta: "/arquivos/cartas/marcon.pdf"
+
+- nome: "Paulo Lemos"
+  foto: "/imagens/apoiadores/foto1.png"
+  estado: "Amapá"
+  carta: "/arquivos/cartas/paulo-lemos.pdf"
+
+- nome: "Rick Azevedo"
+  foto: "/imagens/apoiadores/foto1.png"
+  estado: "Rio de Janeiro"
+  carta: "/arquivos/cartas/rick-azevedo.pdf"
+
+- nome: "Valmir Assunção"
+  foto: "/imagens/apoiadores/foto1.png"
+  estado: "Bahia"
+  carta: "/arquivos/cartas/valmir-assuncao.pdf"
+
+- nome: "Deyvid Bacelar"
+  foto: "/imagens/apoiadores/foto1.png"
+  estado: "Bahia"
+  carta: "/arquivos/cartas/deyvid-bacelar.pdf"
+
+- nome: "Mónica das Pretas"
+  foto: "/imagens/apoiadores/foto2.png"
+  estado: "São Paulo"
+  carta: "/arquivos/cartas/monica-das-pretas.pdf"
+
+- nome: "Carolline Sardá"
+  foto: "/imagens/apoiadores/foto2.png"
+  estado: "Santa Catarina"
+  carta: "/arquivos/cartas/carolline-sarda.pdf"
+
+- nome: "Ana Julia"
+  foto: "/imagens/apoiadores/foto2.png"
+  estado: "Paraná"
+  carta: "/arquivos/cartas/ana-julia.pdf"
+
+- nome: "Giovani Culau"
+  foto: "/imagens/apoiadores/foto1.png"
+  estado: "Rio Grande do Sul"
+  carta: "/arquivos/cartas/giovani-culau.pdf"
+
+- nome: "Patrus Ananias"
+  foto: "/imagens/apoiadores/foto1.png"
+  estado: "Minas Gerais"
+  carta: "/arquivos/cartas/patrus-ananias.pdf"
+
+- nome: "Camila Jara"
+  foto: "/imagens/apoiadores/foto2.png"
+  estado: "Mato Grosso do Sul"
+  carta: "/arquivos/cartas/camila-jara.pdf"
+
+- nome: "Vicentinho"
+  foto: "/imagens/apoiadores/foto1.png"
+  estado: "São Paulo"
+  carta: "/arquivos/cartas/vicentinho.pdf"
+
+- nome: "Dr Thiago"
+  foto: "/imagens/apoiadores/foto1.png"
+  estado: "Rio Grande do Sul"
+  carta: "/arquivos/cartas/dr-thiago.pdf"
+
+- nome: "Gleide Andrade"
+  foto: "/imagens/apoiadores/foto2.png"
+  estado: "Minas Gerais"
+  carta: "/arquivos/cartas/gleide-andrade.pdf"
+
+- nome: "Junior Freitas"
+  foto: "/imagens/apoiadores/foto1.png"
+  estado: "São Paulo"
+  carta: "/arquivos/cartas/junior-freitas.pdf"
+
+- nome: "Vanessa da Rosa"
+  foto: "/imagens/apoiadores/foto2.png"
+  estado: "Santa Catarina"
+  carta: "/arquivos/cartas/vanessa-da-rosa.pdf"
+
+- nome: "Talita Barbosa"
+  foto: "/imagens/apoiadores/foto2.png"
+  estado: "São Paulo"
+  carta: "/arquivos/cartas/talita-barbosa.pdf"
+
+- nome: "Áurea Carolina"
+  foto: "/imagens/apoiadores/foto2.png"
+  estado: "Minas Gerais"
+  carta: "/arquivos/cartas/aurea-carolina.pdf"
+
+- nome: "Elias Jabbour"
+  foto: "/imagens/apoiadores/foto1.png"
+  estado: "Rio de Janeiro"
+  carta: "/arquivos/cartas/elias-jabbour.pdf"
+
+- nome: "Jéssica Michels"
+  foto: "/imagens/apoiadores/foto2.png"
+  estado: "Santa Catarina"
+  carta: "/arquivos/cartas/jessica-michels.pdf"
+
+- nome: "Ruy Carneiro"
+  foto: "/imagens/apoiadores/foto1.png"
+  estado: "Paraíba"
+  carta: "/arquivos/cartas/ruy-carneiro.pdf"
+
+- nome: "Paulinho da Silva"
+  foto: "/imagens/apoiadores/foto1.png"
+  estado: "Santa Catarina"
+  carta: "/arquivos/cartas/paulinho-da-silva.pdf"
+
+- nome: "Rubens Otoni"
+  foto: "/imagens/apoiadores/foto1.png"
+  estado: "Goiás"
+  carta: "/arquivos/cartas/rubens-otoni.pdf"
+
+- nome: "Ana Elisa"
+  foto: "/imagens/apoiadores/foto2.png"
+  estado: "Minas Gerais"
+  carta: "/arquivos/cartas/ana-elisa.pdf"
+
+- nome: "Juliana Fraga"
+  foto: "/imagens/apoiadores/foto2.png"
+  estado: "São Paulo"
+  carta: "/arquivos/cartas/juliana-fraga.pdf"
+
+- nome: "Samara Madureira"
+  foto: "/imagens/apoiadores/foto2.png"
+  estado: "Santa Catarina"
+  carta: "/arquivos/cartas/samara-madureira.pdf"
+
+- nome: "Rosa Amorim"
+  foto: "/imagens/apoiadores/foto2.png"
+  estado: "Pernambuco"
+  carta: "/arquivos/cartas/rosa-amorim.pdf"
+
+- nome: "Erika Kokay"
+  foto: "/imagens/apoiadores/foto2.png"
+  estado: "Distrito Federal"
+  carta: "/arquivos/cartas/erika-kokay.pdf"
+
+- nome: "Humberto Matos"
+  foto: "/imagens/apoiadores/foto1.png"
+  estado: "Rio Grande do Sul"
+  carta: "/arquivos/cartas/humberto-matos.pdf"
+
+- nome: "Sued Carvalho"
+  foto: "/imagens/apoiadores/foto2.png"
+  estado: "Ceará"
+  carta: "/arquivos/cartas/sued-carvalho.pdf"
+
+- nome: "Natasha Ferreira"
+  foto: "/imagens/apoiadores/foto2.png"
+  estado: "Rio Grande do Sul"
+  carta: "/arquivos/cartas/natasha-ferreira.pdf"
+
+- nome: "Diego Guimarães"
+  foto: "/imagens/apoiadores/foto1.png"
+  estado: "Mato Grosso"
+  carta: "/arquivos/cartas/diego-guimaraes.pdf"
+
+- nome: "Carlos Augusto"
+  foto: "/imagens/apoiadores/foto1.png"
+  estado: "Rio Grande do Sul"
+  carta: "/arquivos/cartas/carlos-augusto.pdf"
+
+- nome: "Elton Welter"
+  foto: "/imagens/apoiadores/foto1.png"
+  estado: "Paraná"
+  carta: "/arquivos/cartas/elton-welter.pdf"
+
+- nome: "Delegado Léo"
+  foto: "/imagens/apoiadores/foto1.png"
+  estado: "Rio de Janeiro"
+  carta: "/arquivos/cartas/delegado-leo.pdf"
+
+- nome: "Leo Azevedo"
+  foto: "/imagens/apoiadores/foto1.png"
+  estado: "Ceará"
+  carta: "/arquivos/cartas/leo-azevedo.pdf"
+
+- nome: "Pérola Sampaio"
+  foto: "/imagens/apoiadores/foto2.png"
+  estado: "Rio Grande do Sul"
+  carta: "/arquivos/cartas/perola-sampaio.pdf"
+
+- nome: "Matheus Gomes"
+  foto: "/imagens/apoiadores/foto1.png"
+  estado: "Rio Grande do Sul"
+  carta: "/arquivos/cartas/matheus-gomes.pdf"
+
+- nome: "Lenilton Rodrigues"
+  foto: "/imagens/apoiadores/foto1.png"
+  estado: "Rio de Janeiro"
+  carta: "/arquivos/cartas/lenilton-rodrigues.pdf"
+
+- nome: "Mire Chagas"
+  foto: "/imagens/apoiadores/foto2.png"
+  estado: "Santa Catarina"
+  carta: "/arquivos/cartas/mire-chagas.pdf"
+
+- nome: "Jack Rocha"
+  foto: "/imagens/apoiadores/foto2.png"
+  estado: "Espírito Santo"
+  carta: "/arquivos/cartas/jack-rocha.pdf"
+
+- nome: "Professor Israel"
+  foto: "/imagens/apoiadores/foto1.png"
+  estado: "Distrito Federal"
+  carta: "/arquivos/cartas/professor-israel.pdf"
+
+- nome: "Ribeiro do Sinpol"
+  foto: "/imagens/apoiadores/foto1.png"
+  estado: "Rondônia"
+  carta: "/arquivos/cartas/ribeiro-do-sinpol.pdf"
+
+- nome: "Renato Roseno"
+  foto: "/imagens/apoiadores/foto1.png"
+  estado: "Ceará"
+  carta: "/arquivos/cartas/renato-roseno.pdf"
