@@ -1,7 +1,6 @@
 {% assign apoiadores = site.data.apoiadores | sort_natural: "nome" %}
 {% for a in apoiadores %}
     <div class="card-apoiador">
-        <img src="{{ a.foto }}" width="90" height="90" alt="{{ a.nome }}">
         <div class="card-apoiador-div">
             <span class="nome-apoiador">{{ a.nome }}</span>
             <span class="estado-apoiador">{{ a.estado }}</span>
