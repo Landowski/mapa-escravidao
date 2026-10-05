@@ -433,7 +433,7 @@
   estado: "Minas Gerais"
   carta: "/arquivos/cartas/moara-saboia.pdf"
 
-  - nome: "Marcon"
+- nome: "Marcon"
   foto: "/imagens/apoiadores/foto1.png"
   estado: "Rio Grande do Sul"
   carta: "/arquivos/cartas/marcon.pdf"
